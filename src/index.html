@@ -7,9 +7,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Bangers|Titillium+Web" rel="stylesheet">
   <title>Ergineer Homeworks!</title>
+
+  <style>
+  
+  h1 {
+    animation-duration: 8s;
+    animation-name: slidein;
+    animation-direction: reverse;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes slidein {
+    0% {
+      margin-left: 0%;
+    }
+    50% {
+      margin-left: 250px;
+    }
+    100% {
+      margin-left: 0%;
+    }
+    }
+  
+    .nav-link {
+      transition: font-size 5s, color 2s;
+    }
+
+</style>
 </head>
 
 <body>
+
+  <form action="/url" method="GET">
+    <p> Please enter some text below:</p>
+    <input type="text" id="sepetEkle">
+    <button type="submit">SepeteEkle</button> 
+  </form>
 
   <header class="main-navigation">
     <div class="container nav-container">
@@ -71,7 +104,7 @@
       <div class="destination">
         <h4>Ada Kaçamağı</h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <div class="btn">Beni de Al!</div>
+        <div  id = "demo" class="btn">Beni de Al!</div>
       </div>
     </section>
   </div><!-- container -->
